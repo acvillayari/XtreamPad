@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/background"
+    tools:context=".mvp.ui.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageclient"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:background="@android:color/transparent"
+                        android:paddingRight="20dp"
+                        android:src="@raw/logo_cliente" />
+
+                    <ImageButton
+                        android:id="@+id/imagees"
+                        android:layout_width="50dp"
+                        android:layout_height="57dp"
+                        android:background="@android:color/transparent"
+                        android:src="@raw/es" />
+
+                    <ImageButton
+                        android:id="@+id/imageus"
+                        android:layout_width="50dp"
+                        android:layout_height="57dp"
+                        android:background="@android:color/transparent"
+                        android:src="@raw/us" />
+
+                    <ImageButton
+                        android:id="@+id/imagege"
+                        android:layout_width="50dp"
+                        android:layout_height="57dp"
+                        android:background="@android:color/transparent"
+                        android:src="@raw/ge" />
+
+                    <ImageButton
+                        android:id="@+id/imagech"
+                        android:layout_width="50dp"
+                        android:layout_height="57dp"
+                        android:background="@android:color/transparent"
+                        android:src="@raw/ch" />
+
+                    <ImageButton
+                        android:id="@+id/imagesuppler"
+                        android:layout_width="220dp"
+                        android:layout_height="100dp"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="20dp"
+                        android:src="@raw/logo_proveedor" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <include layout="@layout/content_main" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <VideoView
+                android:id="@+id/video_bannerHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

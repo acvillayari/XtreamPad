@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.ui.HeaderFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageclient"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@android:color/transparent"
+                android:paddingRight="20dp"
+                android:src="@raw/logo_cliente" />
+
+            <ImageButton
+                android:id="@+id/imagees"
+                android:layout_width="50dp"
+                android:layout_height="57dp"
+                android:background="@android:color/transparent"
+                android:src="@raw/es" />
+
+            <ImageButton
+                android:id="@+id/imageus"
+                android:layout_width="50dp"
+                android:layout_height="57dp"
+                android:background="@android:color/transparent"
+                android:src="@raw/us" />
+
+            <ImageButton
+                android:id="@+id/imagege"
+                android:layout_width="50dp"
+                android:layout_height="57dp"
+                android:background="@android:color/transparent"
+                android:src="@raw/ge" />
+
+            <ImageButton
+                android:id="@+id/imagech"
+                android:layout_width="50dp"
+                android:layout_height="57dp"
+                android:background="@android:color/transparent"
+                android:src="@raw/ch" />
+
+            <ImageButton
+                android:id="@+id/imagesuppler"
+                android:layout_width="220dp"
+                android:layout_height="100dp"
+                android:background="@android:color/transparent"
+                android:paddingLeft="20dp"
+                android:src="@raw/logo_proveedor" />
+        </TableRow>
+
+    </TableLayout>
+    </LinearLayout>
+</FrameLayout>

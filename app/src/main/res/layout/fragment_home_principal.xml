@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".mvp.ui.Home_PrincipalFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ly1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="0dp"
+                    android:padding="0dp">
+
+                    <ImageView
+                        android:id="@+id/imageHome_Principal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="464dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="0dp"
+                        android:padding="0dp"
+                        android:src="@raw/banner_principal2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/ly1"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/imagetiempo"
+                            android:layout_width="120dp"
+                            android:layout_height="85dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@android:color/transparent"
+                            android:baselineAligned="false"
+                            android:src="@raw/tiempo" />
+
+                        <TextView
+                            android:id="@+id/txtTime"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/imagetiempo"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"
+                            android:text="Tu Tiempo Vale"
+                            android:textColor="#fff" />
+
+                        <ImageButton
+                            android:id="@+id/imagegastronomia"
+                            android:layout_width="120dp"
+                            android:layout_height="85dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@+id/imagetiempo"
+                            android:background="@android:color/transparent"
+                            android:src="@raw/gatronomia" />
+
+                        <TextView
+                            android:id="@+id/txtGastronomia"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/imagegastronomia"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@+id/txtTime"
+                            android:gravity="center"
+                            android:text="Gastronomía"
+                            android:textColor="#fff" />
+
+                        <ImageButton
+                            android:id="@+id/imageentretenimiento"
+                            android:layout_width="120dp"
+                            android:layout_height="85dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@+id/imagegastronomia"
+                            android:background="@android:color/transparent"
+                            android:src="@raw/entretenimiento" />
+
+                        <TextView
+                            android:id="@+id/txtentretenimiento"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/imageentretenimiento"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@+id/txtGastronomia"
+                            android:gravity="center"
+                            android:text="Entretenimiento"
+                            android:textColor="#fff" />
+
+                        <ImageButton
+                            android:id="@+id/imagetaxi"
+                            android:layout_width="120dp"
+                            android:layout_height="85dp"
+                            android:layout_below="@+id/txtTime"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@+id/txtTime"
+                            android:background="@android:color/transparent"
+                            android:baselineAligned="false"
+                            android:src="@raw/taxi" />
+
+                        <TextView
+                            android:id="@+id/txtTaxi"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/imagetaxi"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@+id/imagetaxi"
+                            android:gravity="center"
+                            android:text="Taxi Service"
+                            android:textColor="#fff" />
+
+                        <ImageButton
+                            android:id="@+id/imageevento"
+                            android:layout_width="120dp"
+                            android:layout_height="85dp"
+                            android:layout_below="@+id/txtGastronomia"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@+id/imagetaxi"
+                            android:background="@android:color/transparent"
+                            android:baselineAligned="false"
+                            android:src="@raw/eventos" />
+
+                        <TextView
+                            android:id="@+id/txtEvento"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/imagetaxi"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@+id/txtTaxi"
+                            android:gravity="center"
+                            android:text="Eventos"
+                            android:textColor="#fff" />
+
+                        <ImageButton
+                            android:id="@+id/imageinteres"
+                            android:layout_width="120dp"
+                            android:layout_height="85dp"
+                            android:layout_below="@+id/txtentretenimiento"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@+id/imageevento"
+                            android:background="@android:color/transparent"
+                            android:baselineAligned="false"
+                            android:src="@raw/interes" />
+
+                        <TextView
+                            android:id="@+id/txtinteres"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/imageevento"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@+id/txtEvento"
+                            android:gravity="center"
+                            android:text="De Interes"
+                            android:textColor="#fff" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.ui.Home_PrincipalFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center"
+                    android:paddingTop="0dp"
+                    android:text="Ahorar Tiempo es ahorar Dinero. Compra Online"
+                    android:textColor="@color/colorWhite"
+                    tools:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"/>
+
+                    <technolifestyle.com.imageslider.FlipperLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="510dp"
+                    android:id="@+id/flipper"></technolifestyle.com.imageslider.FlipperLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageplazavea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:baselineAligned="false"
+                            android:src="@raw/plazavea"
+                            tools:layout_gravity="center"
+                            tools:layout_margin="10dp"
+                            tools:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imagemass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:baselineAligned="false"
+                            android:src="@raw/mass"
+                            tools:layout_gravity="center"
+                            tools:layout_margin="10dp"
+                            tools:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imagevivanda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:baselineAligned="false"
+                            android:src="@raw/vivanda"
+                            tools:layout_gravity="center"
+                            tools:layout_margin="10dp"
+                            tools:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageoeschsle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:baselineAligned="false"
+                            android:src="@raw/oeschsle"
+                            tools:layout_gravity="center"
+                            tools:layout_margin="10dp"
+                            tools:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imagereal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:baselineAligned="false"
+                            android:src="@raw/real"
+                            tools:layout_gravity="center"
+                            tools:layout_margin="10dp"
+                            tools:padding="10dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnBack"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="225dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:background="#89000000"
+                            android:text="Back"
+                            android:textColor="@color/colorWhite" />
+
+                        <Button
+                            android:id="@+id/btnHome"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/btnBack"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginBottom="-1dp"
+                            android:layout_toEndOf="@+id/btnBack"
+                            android:layout_weight="1"
+                            android:background="#89000000"
+                            android:text="Home"
+                            android:textColor="@color/colorWhite" />
+                    </RelativeLayout>
+                </TableRow>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
